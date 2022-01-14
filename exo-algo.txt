@@ -1,0 +1,208 @@
+Algorithme    somme ;
+Var
+           Tab1 (1 : 5), Tab2 (1 : 5), Tab3 (1 : 5) : tableau d’entiers ;
+            i : Entier ;
+Début
+             Pour i --> 1 à 5   faire
+                  Tab 3 [i] <--	tab 1 [i] + tab 2 [i]
+             Fin Pour
+Fin
+      	
+
+
+
+Algorithme     Tri ;   
+Var
+          Tab(1 : 5) : tableau d’entier ;
+          min, j, i, permute, position : Entiers ;
+Début
+             Pour i --> 1 à 5 faire
+                  min <-- tab [i] ; position <-- i ;
+                        Pour j -->j à 5 faire
+                             Si tab [j] < min alors ;
+                              min <-- tab [j] ;
+                              position 	<-- j ;
+                            
+                           Fin si
+                          Fin Pour
+                 permute <-- tab [i]
+                 tab [i] <-- min
+                 tab [position]	<-- permute ;
+          Fin Pour
+Fin
+
+
+
+
+
+Algorithme       plus_grand_reel ;
+Var 
+        A,B :réeis ;
+Début
+            Afficher ¨ Entrer deux réels ¨ ;
+                Saisir (A,B) ;
+                      Si A>B alors
+                                  Afficher ¨ le plus grand est¨, A ;
+                       Fin si
+                          Si A=B alors
+                                     Afficher ¨ Ils sont égaux ¨ ;
+                           Fin si
+Fin
+
+
+
+
+
+Algorithme   mineur ;
+Var
+         Annee, age :entiers ;
+Début
+          Afficher ¨ Entrer votre année de naissance ¨ ;
+                Saisir  annee ;
+                      Age <-- 2021- annee ;
+
+            Si age<10 alors 
+                                Afficher ¨ Vous avez  ¨, age,¨ ans vous êtes un bébé¨ ;
+              Fin si
+Fin
+
+Algorithme          feu_tricolor ;
+Var 
+                 Couleur : chaine de caractère ;
+Début
+             Afficher¨ choisissez une couleur entre Rouge, Orange, Verte ¨ ;
+                    Saisir  couleur ;
+                             Si couleur = ¨ Rouge ¨ alors
+                                      Afficher ¨ S’arrêter ¨ ;
+                                               Sinon si couleur = ¨ Orange ¨ alors 
+                                                     Afficher ¨ Ralentir ¨ ;
+                                                             Sinon si couleur = ¨ Verte ¨ alors 
+                                                                   Afficher ¨ Passer ¨ ;
+                                                                           Sinon 
+                                                                                   Afficher ¨ Erreur de choix ¨ ;
+                             Fin si
+Fin
+
+
+
+
+
+
+Algorithme    feu _tricolor ;
+Var
+         Couleur : chaine de caractère ;
+Début
+           Afficher ¨ Choisissez une couleur entre Rouge, Orange, Verte¨ ;
+                 Saisir  couleur ;
+                        Suivant couleur faire
+                             ¨ Rouge ¨ Afficher ¨ S’arrêter ¨ ;
+                                     ¨ Orange ¨ Afficher ¨ Ralentir ¨ ;
+                                              ¨ Verte ¨ Afficher ¨ Passer ¨ ;
+                        Fin suivant
+Fin
+            
+
+
+
+
+
+Algorithme    dix_premiers_nombres ;
+Var 
+        S, I, n : entiers ;
+Début
+              Afficher ¨ Entrez un nombre ¨ ;
+                     Saisir  n ;
+                            S <-- 0 ;
+                            I <-- 1 ;
+                      Tant que I < = 10 faire
+                              S <-- S + I ;
+                              I <-- I + 1 ;
+                        Fin Tant que ;
+              Afficher ¨ La sommes des dix premiers nombres est : , ¨S ;
+Fin
+
+
+
+
+
+Algorithme     message_ecran ;
+Var 
+         Message : chaine de caractère :
+          I : entier ;
+Début
+             Afficher ¨ Entrez un nom ¨ ;
+              Saisir   nom ;
+                     nom <-- ¨ 0 ¨ ;
+              Tant que nom < > ¨ ZZZZ ¨ faire
+                     Afficher ¨ Veillez entrer un nom ¨ ;
+                    i<-- i + 1 ;
+              Fin Tant que
+Fin
+
+
+
+
+
+Algorithme     reponse_question ;
+Var
+        Rep : chaine de caractère ;
+Début
+               Afficher ¨ Aimez-vous l’informatique ? Oui / Non¨ ;
+               Saisir    Rep ;
+                      Repeter
+                                 Afficher ¨ Aimez-vous l’informatique ? Oui/Non¨ ;
+                      Jusqu’à Rep =¨ Oui ¨ ou ¨ Non ¨ ;
+Fin
+
+
+
+
+
+
+
+Algorithme     valeur_absolue
+Var
+            a, b, v :  Entiers ;
+Début
+             Afficher ¨ Entrer les deux nombres ¨ ;
+             Saisir (a, b) ;
+                 Si a < b Alors 
+                         V <-- b – a
+                                Sinon 
+                                         V <-- a – b
+                  Fin si
+                  Afficher   v
+Fin
+
+
+
+
+
+Algorithme    PGCD
+Var
+         a, b, r : réels ;
+Début
+         Afficher ¨ Entrer les valeurs de a et b ¨ ;
+            Saisir  (a, b) ;
+            r <-- a Mod b
+         Si r = 0 Alors 
+                      Afficher ¨ le PGCD est :¨,b ;
+                  Sinon
+                     Tant que r > 0 Faire
+                        a <-- b ;
+                        b <-- r ;
+                        r <-- a Mod b ;
+                    Fin Tant que
+                       Afficher ¨ le PGCD des deux nombres est :¨,b ;
+         Fin si
+Fin
+
+
+
+
+
+
+
+
+
+
